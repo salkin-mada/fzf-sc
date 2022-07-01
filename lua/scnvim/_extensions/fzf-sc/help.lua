@@ -41,7 +41,7 @@ function M.fzf_sc_help()
 	local specs = {["source"] = help_keys, ["sink"] = scnvim_help_open}
 
 	vim.fn["fzf#run"](specs)
-
+    vim.cmd[[startinsert]]
 end
 
 return M
